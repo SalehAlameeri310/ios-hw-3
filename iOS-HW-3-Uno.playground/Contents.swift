@@ -105,7 +105,7 @@ struct Card {
             return "Wild.png"
         }
     }
-
+    
     
 }
 var cards : [Card] = []
@@ -113,17 +113,17 @@ var colors = ["Green", "Yellow", "Red", "Blue"]
 var actions = ["Draw","Reverse","Skip"]
 var wilds = "Wild"
 for color in colors {
-
+    
     for number in 0...9 {
         cards.append(Card(color: color, number: number))
     }
     for number in 1...9 {
-       cards.append(Card(color: color, number: number))
+        cards.append(Card(color: color, number: number))
     }
     for action in actions {
-    cards.append(Card(color: color,action: action))
-}
-       for action in actions {
+        cards.append(Card(color: color,action: action))
+    }
+    for action in actions {
         cards.append(Card(color: color,action: action))
     }
     
